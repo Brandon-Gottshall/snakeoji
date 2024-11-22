@@ -10,6 +10,7 @@ Snakoji is a C-based terminal game designed to help me and others learn C develo
 Snakoji is not your average snake game. Instead of classic mechanics, it simulates the life of a snake with three stats—food, water, and entertainment. Your goal is to waddle around the game board, collect emojis representing resources, and survive as long as possible while your stats gradually decay.
 
 This project was built to:
+
 - Explore **C development principles**, including modular programming, file structure organization, and Makefile usage.
 - Help others learn by providing **thoroughly documented code** with `Explanation:` comments for clarity.
 - Foster collaboration and community contributions to expand the game's feature set.
@@ -19,37 +20,42 @@ This project was built to:
 ### **Features**
 
 #### **Implemented Features**
-- **Basic Gameplay**: 
+
+- **Basic Gameplay**:
   - Control a snake using WASD keys in a terminal.
   - Snake moves around a bordered game board.
-- **Modular Code**: 
+- **Modular Code**:
   - Organized file structure with clear separation of concerns (`board`, `snake`, `utils`).
-- **Stats Tracking**:
-  - Basic stats (food, water, entertainment) displayed on the right-hand side of the game board.
 - **Terminal Compatibility**:
   - Cross-platform handling for screen clearing and input.
 
 ---
 
 ### **Planned Features**
-1. **Stats Management**:
+
+1. **Stats Tracking**:
+
+   - Basic stats (food, water, entertainment) displayed on the right-hand side of the game board.
+
+2. **Stats Management**:
+
    - Stats (food, water, entertainment) will decay at an increasing rate as time progresses.
    - Collect emojis (e.g., 🍎 for food, 💧 for water, 🎮 for entertainment) to replenish stats.
 
-2. **Dynamic Gameplay**:
+3. **Dynamic Gameplay**:
    - Increasing difficulty as items become scarcer.
    - Larger snakes consume resources faster.
 
-3. **Game Over Conditions**:
+4. **Game Over Conditions**:
    - End the game if any stat reaches zero.
 
-4. **Animated Snake Movement**:
+5. **Animated Snake Movement**:
    - Smooth transitions between frames with better visual feedback.
 
-5. **High Score Tracking**:
+6. **High Score Tracking**:
    - Save and display the longest survival time.
 
-6. **Learning Enhancements**:
+7. **Learning Enhancements**:
    - Include a toggle to show stats like memory usage, keypress latency, or other low-level C data during gameplay.
    - Provide a developer mode with debug output for learning.
 
@@ -58,22 +64,26 @@ This project was built to:
 ### **How to Run**
 
 1. **Clone the Repository**:
+
    ```bash
-   git clone https://github.com/your-username/snakoji.git
+   git clone https://github.com/brandon-gottshall/snakoji.git
    cd snakoji
    ```
 
 2. **Build the Project**:
+
    ```bash
    make
    ```
 
 3. **Run the Game**:
+
    ```bash
    make run
    ```
 
 4. **Clean the Build**:
+
    ```bash
    make clean
    ```
@@ -83,6 +93,7 @@ This project was built to:
 ### **Contributing**
 
 Snakoji is a work in progress, and contributions are welcome! If you have a feature suggestion or find a bug:
+
 1. Open an issue ticket on the GitHub repository.
 2. Describe your idea or issue in detail.
 3. (Optional) Submit a pull request with your fix or feature.
@@ -92,6 +103,7 @@ Snakoji is a work in progress, and contributions are welcome! If you have a feat
 ### **Future Ideas**
 
 Looking for inspiration? Here are some additional features we’d love to explore:
+
 - **AI Snake Mode**: Add AI-controlled snakes that compete for resources.
 - **Multiplayer Mode**: Introduce local multiplayer support.
 - **Power-Ups**: Add special items like "freeze time" or "speed boost."
@@ -102,6 +114,7 @@ Looking for inspiration? Here are some additional features we’d love to explor
 ### **Why Learn from Snakoji?**
 
 Snakoji is built with learning in mind. The code is filled with `Explanation:` comments that:
+
 - Clarify what each function and line of code does.
 - Highlight best practices for modular development.
 - Show how to use Makefiles effectively for building and managing C projects.
